@@ -65,6 +65,25 @@ The `output/digital twin.mp4` in this repo is the **original MATLAB/Simulink dig
 
 > **Note**: GitHub doesn't play large MP4 videos inline. The GIF above loops automatically — click it or the link above to download the full video.
 
+## Original MATLAB/Simulink Project Assets
+
+The `output/original_project/` folder contains the **original project files** from the MATLAB/Simulink implementation:
+
+| File | Description |
+|------|-------------|
+| `MAZE.mp4` | Original maze solving demonstration (20s) |
+| `maze.jpg`, `maze2.jpg`, `maze3.jpg` | Test maze images used in original project |
+| `gikmazefinalcode.m` | Main MATLAB script for maze solving + IK |
+| `interparc.m` | MATLAB interpolation function for path smoothing |
+| `myCobot28.urdf` | Original URDF for MyCobot in Simulink |
+
+| Original Maze Demo | Python Simulation |
+|-------------------|-------------------|
+| [![Original Maze](output/original_maze_preview.gif)](output/original_project/MAZE%20SOLVER%20/MAZE.mp4) | [![Simulation](output/simulation_preview.gif)](output/simulation.mp4) |
+| *Click for original MATLAB demo (20s)* | *Click for Python replica (generated with \`--record\`)* |
+
+These are the **original project files** that inspired this Python replica. The MATLAB code (`gikmazefinalcode.m`) implements the full pipeline: maze image processing → waypoint extraction → inverse kinematics → TCP communication with the robot.
+
 ## Quick Start
 
 ```bash
@@ -96,7 +115,17 @@ mycobot-maze-navigation/
     ├── joint_angles.csv
     ├── simulation.mp4
     ├── digital_twin_preview.gif      # Real digital twin preview (plays inline)
-    └── simulation_preview.gif        # Python simulation preview (plays inline)
+    ├── simulation_preview.gif        # Python simulation preview (plays inline)
+    ├── original_maze_preview.gif     # Original MATLAB demo preview (plays inline)
+    └── original_project/
+        └── MAZE SOLVER/
+            ├── MAZE.mp4              # Original maze demo (20s)
+            ├── maze.jpg              # Test maze images
+            ├── maze2.jpg
+            ├── maze3.jpg
+            ├── gikmazefinalcode.m    # Main MATLAB script
+            ├── interparc.m           # Path interpolation function
+            └── myCobot28.urdf        # Original URDF for Simulink
 ```
 
 ## Pipeline Outputs
