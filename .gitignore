@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Large outputs (keep GIFs, ignore MP4s and generated)
+output/*.mp4
+output/*.csv
+output/*.png
+!output/*_preview.gif
+!output/README.md
+
+# Local config
+config_local.py
