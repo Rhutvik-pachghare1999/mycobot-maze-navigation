@@ -101,7 +101,7 @@ class IKConfig:
     
     def __post_init__(self):
         if self.weights is None:
-            self.weights = [0.25, 0.25, 0.25, 1.0, 1.0, 1.0]
+            self.weights = [0.3, 0.3, 0.3, 1.0, 1.0, 1.0]
         
         if self.joint_offsets_deg is None:
             # Original MATLAB adjustments:
